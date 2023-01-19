@@ -1,0 +1,171 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #ebd1d1;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+}
+
+/* Input area */
+
+#input-entry-and-list{
+    margin: auto;
+    margin-top: 5%;
+    width: 70%;
+    background-color: antiquewhite;
+    padding: 2rem;
+    border: 5px solid white;
+}
+
+#input-entry-and-list h1{
+    padding-bottom: 20px;
+}
+
+#desc{
+    width: 100%;
+    text-align: left;
+    /* border-top: 2px solid white; */
+    /* padding-left: 0.5rem; */
+    /* border: 1px solid red; */
+}
+
+#description{
+    width: inherit;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    background-color: antiquewhite;
+    border-style: hidden;
+}
+
+#description:focus{
+    outline: none;
+}
+
+#cat-and-date{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    text-align: left;
+}
+
+#cat{
+    width: 45%;
+}
+
+#cat select{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: antiquewhite;
+}
+
+#date{
+    width: 45%;
+}
+
+#date input{
+    width: 100%;
+    background-color: antiquewhite;
+}
+
+/* Buttons */
+
+button{
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover{
+    outline: auto;
+}
+
+#primary-buttons{
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#primary-buttons button{
+    width: 17rem;
+    height: 2.5rem;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+#add-btn{
+    background-color: #444444;
+    color: white;
+}
+
+#delete-btn{
+    background-color: #ee351e;
+    color: white;
+}
+
+#secondary-buttons{
+    padding-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#secondary-buttons button{
+    width: 6rem;
+    height: 2rem;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+#all-btn{
+    background-color: gray;
+}
+
+#personal-btn{
+    background-color: #42a5f5;
+}
+
+#school-btn{
+    background-color: #f2a700;
+}
+
+#work-btn{
+    background-color: #9c00af;
+}
+
+#cleaning-btn{
+    background-color: #43a047;
+}
+
+#other-btn{
+    background-color: #8d6e63;
+}
+
+/* general */
+
+.bold{
+    font-weight: bold;
+}
+
+.border-style-remove{
+    border-style: hidden;
+}
+
+.border-style-remove:focus{
+    outline: none;
+}
+
+.button-hover:hover{
+    border-bottom-style: groove;
+}
+
+.txt-white{
+    color: white;
+}
