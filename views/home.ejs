@@ -15,54 +15,56 @@
             <label for="description" class="bold">DESCRIPTION </label><br>
             <input type="text" name="description" id="description" class="border-style-remove button-hover" placeholder="What do you need to do ?">
         </div>
-        <div id="cat-and-date">
-            <div id="cat">
-                <label for="category" class="bold">CATEGORY</label><br>
-                <select name="categories" id="category" class="border-style-remove button-hover">
-                    <option value="Choose" selected>Choose a category</option>
-                    <option value="personal">Personal</option>
-                    <option value="school">School</option>
-                    <option value="work">Work</option>
-                    <option value="cleaning">Cleaning</option>
-                    <option value="other">Other</option>
-                </select>
+        <form action="/add_task" method="post">    
+            <div id="cat-and-date">
+                <div id="cat">
+                    <label for="category" class="bold">CATEGORY</label><br>
+                    <select name="categories" id="category" class="border-style-remove button-hover">
+                        <option value="Choose" selected>Choose a category</option>
+                        <option value="personal">Personal</option>
+                        <option value="school">School</option>
+                        <option value="work">Work</option>
+                        <option value="cleaning">Cleaning</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div id="date">
+                    <label for="due-date" class="bold">DUE DATE</label><br>
+                    <input type="date" name="date" id="due-date" class="border-style-remove button-hover" placeholder="dd/mm/yyyy">
+                </div>
             </div>
-            <div id="date">
-                <label for="due-date" class="bold">DUE DATE</label><br>
-                <input type="date" name="date" id="due-date" class="border-style-remove button-hover" placeholder="dd/mm/yyyy">
+            <div id="primary-buttons">
+                <div>
+                    <button type="submit" id="add-btn"><i class="fa-solid fa-plus"></i> &nbsp;ADD TASK</button>
+                </div>
+                <div>
+                    <button type="button" id="delete-btn"><i class="fa-solid fa-trash-can"></i> &nbsp;DELETE TASKS</button>
+                </div>
             </div>
-        </div>
-        <div id="primary-buttons">
-            <div>
-                <button type="submit" id="add-btn"><i class="fa-solid fa-plus"></i> &nbsp;ADD TASK</button>
+            <div id="secondary-buttons">
+                <div>
+                    <button type="button" id="all-btn" class="txt-white">All</button>
+                </div>
+                <div>
+                    <button type="button" id="personal-btn" class="txt-white">Personal</button>
+                </div>
+                <div>
+                    <button type="button" id="school-btn" class="txt-white">School</button>
+                </div>
+                <div>
+                    <button type="button" id="work-btn" class="txt-white">Work</button>
+                </div>
+                <div>
+                    <button type="button" id="cleaning-btn" class="txt-white">Cleaning</button>
+                </div>
+                <div>
+                    <button type="button" id="other-btn" class="txt-white">Other</button>
+                </div>
             </div>
-            <div>
-                <button type="submit" id="delete-btn"><i class="fa-solid fa-trash-can"></i> &nbsp;DELETE TASKS</button>
+            <div id="to_do_list">
+
             </div>
-        </div>
-        <div id="secondary-buttons">
-            <div>
-                <button type="submit" id="all-btn" class="txt-white">All</button>
-            </div>
-            <div>
-                <button type="submit" id="personal-btn" class="txt-white">Personal</button>
-            </div>
-            <div>
-                <button type="submit" id="school-btn" class="txt-white">School</button>
-            </div>
-            <div>
-                <button type="submit" id="work-btn" class="txt-white">Work</button>
-            </div>
-            <div>
-                <button type="submit" id="cleaning-btn" class="txt-white">Cleaning</button>
-            </div>
-            <div>
-                <button type="submit" id="other-btn" class="txt-white">Other</button>
-            </div>
-        </div>
-        <div id="to_do_list">
-            
-        </div>
+        </form>
     </div>
     
 </body>
