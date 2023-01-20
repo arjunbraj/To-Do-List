@@ -11,14 +11,14 @@
 <body>
     <div id="input-entry-and-list">
         <h1>TODO App</h1>
-        <div id="desc">
-            <label for="description" class="bold">DESCRIPTION </label><br>
-            <input type="text" name="description" id="description" class="border-style-remove button-hover" placeholder="What do you need to do ?">
-        </div>
-        <form action="/add_task" method="post">    
+        <form action="/add_task" method="post" id="form1">
+            <div id="desc">
+                <label for="description" class="bold">DESCRIPTION </label><br>
+                <input type="text" name="desc" id="description" class="border-style-remove button-hover" placeholder="What do you need to do ?">
+            </div>    
             <div id="cat-and-date">
                 <div id="cat">
-                    <label for="category" class="bold">CATEGORY</label><br>
+                    <label for="category" class="bold" form="form1">CATEGORY</label><br>
                     <select name="categories" id="category" class="border-style-remove button-hover">
                         <option value="Choose" selected>Choose a category</option>
                         <option value="personal">Personal</option>
