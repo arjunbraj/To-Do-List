@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%= title %></title>
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/77f8116414.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/home.css">
 </head>
@@ -13,13 +14,13 @@
         <h1>TODO App</h1>
         <form action="/add_task" method="post" id="form1">
             <div id="desc">
-                <label for="description" class="bold">DESCRIPTION </label><br>
-                <input type="text" name="desc" id="description" class="border-style-remove button-hover" placeholder="What do you need to do ?">
+                <label for="description" class="bold" form="form1">DESCRIPTION </label><br>
+                <input type="text" name="desc" id="description" form="form1" class="border-style-remove button-hover" placeholder="What do you need to do ?">
             </div>    
             <div id="cat-and-date">
                 <div id="cat">
                     <label for="category" class="bold" form="form1">CATEGORY</label><br>
-                    <select name="categories" id="category" class="border-style-remove button-hover">
+                    <select name="categories" id="category" class="border-style-remove button-hover" form="form1">
                         <option value="Choose" selected>Choose a category</option>
                         <option value="personal">Personal</option>
                         <option value="school">School</option>
@@ -29,36 +30,36 @@
                     </select>
                 </div>
                 <div id="date">
-                    <label for="due-date" class="bold">DUE DATE</label><br>
-                    <input type="date" name="date" id="due-date" class="border-style-remove button-hover" placeholder="dd/mm/yyyy">
+                    <label for="due-date" class="bold" form="form1">DUE DATE</label><br>
+                    <input type="date" name="date" id="due-date" form="form1" class="border-style-remove button-hover" placeholder="dd/mm/yyyy">
                 </div>
             </div>
             <div id="primary-buttons">
                 <div>
-                    <button type="submit" id="add-btn"><i class="fa-solid fa-plus"></i> &nbsp;ADD TASK</button>
+                    <button type="submit" id="add-btn" form="form1"><i class="fa-solid fa-plus"></i> &nbsp;ADD TASK</button>
                 </div>
                 <div>
-                    <button type="button" id="delete-btn"><i class="fa-solid fa-trash-can"></i> &nbsp;DELETE TASKS</button>
+                    <button type="button" id="delete-btn" form="form1"><i class="fa-solid fa-trash-can"></i> &nbsp;DELETE TASKS</button>
                 </div>
             </div>
             <div id="secondary-buttons">
                 <div>
-                    <button type="button" id="all-btn" class="txt-white">All</button>
+                    <button type="button" id="all-btn" class="txt-white" form="form1">All</button>
                 </div>
                 <div>
-                    <button type="button" id="personal-btn" class="txt-white">Personal</button>
+                    <button type="button" id="personal-btn" class="txt-white" form="form1">Personal</button>
                 </div>
                 <div>
-                    <button type="button" id="school-btn" class="txt-white">School</button>
+                    <button type="button" id="school-btn" class="txt-white" form="form1">School</button>
                 </div>
                 <div>
-                    <button type="button" id="work-btn" class="txt-white">Work</button>
+                    <button type="button" id="work-btn" class="txt-white" form="form1">Work</button>
                 </div>
                 <div>
-                    <button type="button" id="cleaning-btn" class="txt-white">Cleaning</button>
+                    <button type="button" id="cleaning-btn" class="txt-white" form="form1">Cleaning</button>
                 </div>
                 <div>
-                    <button type="button" id="other-btn" class="txt-white">Other</button>
+                    <button type="button" id="other-btn" class="txt-white" form="form1">Other</button>
                 </div>
             </div>
             <div id="to_do_list">

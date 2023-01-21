@@ -11,7 +11,7 @@ module.exports.home = function(req, res){
 
 module.exports.addtask = function(req, res){
     Task.create({
-        description: req.body.description,
+        description: req.body.desc,
         category: req.body.categories,
         due_date: req.body.date
     }, function(err, newContact){
