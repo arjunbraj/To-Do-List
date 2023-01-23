@@ -4,10 +4,17 @@ const Task = require("../models/task");
 app.use(express.urlencoded());
 
 module.exports.home = function(req, res){
-    res.render('home', {
-        title: 'To Do List'
+    Task.find({}, function(err, tasks){
+        if(err){
+            console.log('Error in getting contacts from db');
+            return;
+        }
+        return res.render('home', {
+            title: 'TODO List',
+            task_list: tasks
+        });
     });
-}
+};
 
 module.exports.addtask = function(req, res){
     Task.create({
